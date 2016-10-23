@@ -1,0 +1,58 @@
+.help
+	padding 16px ratio-percentage(20,395) 10px
+	background-color #003861
+	&__top
+		position relative
+		margin-bottom 6px
+		clearfix()
+	&__title
+		padding-right 30px
+		color #c2dff8
+		font-family $roboto-med
+		font-size 14px
+		text-transform uppercase
+	&__question
+		position absolute
+		top -7px
+		right 0
+		padding 2px 3px
+		width 21px
+		height 21px
+		background-color #0b5c98
+		box-shadow inset 0 2px 5px rgba(0, 0, 0, 0.07)
+		border-radius 50%
+		color #b8e0fe
+		font-family $roboto-lghtit
+		font-size 13px
+		text-transform uppercase
+		text-align center
+		text-decoration none
+	&__buttons
+		font-size 0
+		clearfix()
+	&__button
+		margin-bottom 13px
+		padding 14px ratio-percentage(8,395) 12px
+		width 48.5%
+		display inline-block
+		vertical-align top
+		background-color #0b5c98
+		color #fffefe
+		font-family $roboto-med
+		font-size 15px
+		text-align center
+		text-transform uppercase
+		text-decoration none
+		border-radius 3px
+		transition background-color .3s ease
+		&:hover
+			background-color darken(#0b5c98,5)
+		&:last-child
+			margin-left 10px
+		+below(1180px)
+			width 100%
+			&:last-child
+				margin-left 0
+	&__button_wide
+		width 100%
+

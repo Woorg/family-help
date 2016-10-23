@@ -1,0 +1,142 @@
+include /../node_modules/bemto.jade/bemto
+include /../node_modules/jade-injected/jade-injected
+include ../blocks/scripts/scripts
+
+include ../blocks/head/head
+include ../blocks/header/header
+include ../blocks/pagination/pagination
+
+include ../blocks/footer/footer
+
+
+block head
+	- var pageTitle = 'Внутренняя';
+	- var pageDescription = 'Внутренняя'
+	- var pageKeywords = 'Внутренняя'
+
+doctype html
+
+html(lang='ru')
+
+	+head()
+
+	body.page
+		.page__wrapper
+			+header()
+			.main.main_inner
+				.main__content
+					.articles
+						article.article
+							.article__title
+								a(href="#link") Услуга 1
+							.article__text
+								p Объемная скидка естественно индуцирует комплексный портрет потребителя, не считаясь с затратами. Комплексный анализ ситуации интуитивно уравновешивает потребительский ребрендинг. Таргетирование существенно продуцирует рейтинг, не считаясь с затратами. Формат события, суммируя приведенные.
+
+							.article__button
+								a.button.button_style-4.more(href="#button") Подробнее
+
+						article.article
+							.article__title
+								a(href="#link") Услуга 1
+							.article__text
+								p Объемная скидка естественно индуцирует комплексный портрет потребителя, не считаясь с затратами. Комплексный анализ ситуации интуитивно уравновешивает потребительский ребрендинг. Таргетирование существенно продуцирует рейтинг, не считаясь с затратами. Формат события, суммируя приведенные.
+
+							.article__button
+								a.button.button_style-4.more(href="#button") Подробнее
+
+						article.article
+							.article__title
+								a(href="#link") Услуга 1
+							.article__text
+								p Объемная скидка естественно индуцирует комплексный портрет потребителя, не считаясь с затратами. Комплексный анализ ситуации интуитивно уравновешивает потребительский ребрендинг. Таргетирование существенно продуцирует рейтинг, не считаясь с затратами. Формат события, суммируя приведенные.
+
+							.article__button
+								a.button.button_style-4.more(href="#button") Подробнее
+
+
+
+
+
+					.main__pagination
+						+pagination
+
+				.main__side
+					aside.side-block.side-contacts
+						h3.side-block__title Связь с нами
+
+						ul.side-contacts__list
+							li.side-contacts__item
+								a.side-contacts__link.side-contacts__link_phone(href="#link")
+									span Телефон:
+									| +38 000 000 00 00
+							li.side-contacts__item
+								a.side-contacts__link.side-contacts__link_skype(href="#link")
+									span Skype:
+									| Login Skype
+							li.side-contacts__item
+								a.side-contacts__link.side-contacts__link_address(href="#link")
+									span Адрес:
+									| г.Москва, ул. Пушкина 9/8
+							li.side-contacts__item
+								a.side-contacts__link.side-contacts__link_email(href="#link")
+									span E-mail:
+									| mail@mail.com
+						.side-contacts__button
+							a.button.button_wide.button_style-5(href="#button") Заказать консультацию
+
+
+					.side-banner
+
+
+
+					aside.side-articles
+						ul.side-articles__list
+							li.side-articles__item
+								a.side-articles__link(href='#link')
+									.side-articles__item-image
+										img(src="#", alt="image")
+									.side-articles__item-title Название статьи
+									.side-articles__item-text Медиавес пока плохо изменяет стиль Медиавес пока плохо изменяет стиль
+							li.side-articles__item
+								a.side-articles__link(href='#link')
+									.side-articles__item-image
+										img(src="#", alt="image")
+									.side-articles__item-title Название статьи
+									.side-articles__item-text Медиавес пока плохо изменяет стиль Медиавес пока плохо изменяет стиль
+							li.side-articles__item
+								a.side-articles__link(href='#link')
+									.side-articles__item-image
+										img(src="#", alt="image")
+									.side-articles__item-title Название статьи
+									.side-articles__item-text Медиавес пока плохо изменяет стиль Медиавес пока плохо изменяет стиль
+
+
+			.relative
+				.relative__in
+					ul.relative__list
+						li.relative__item
+							a.relative__item-link(href='#link')
+								.relative__item-img
+									img(src="#", alt="image")
+								h3.relative__item-title Культурный рекламный блок: методология и особенности
+								p.relative__item-text Рейт-карта однообразно притягивает повседневный ребрендинг, медиаплан.
+						li.relative__item
+							a.relative__item-link(href='#link')
+								.relative__item-img
+									img(src="#", alt="image")
+								h3.relative__item-title Культурный рекламный блок: методология и особенности
+								p.relative__item-text Рейт-карта однообразно притягивает повседневный ребрендинг, медиаплан.
+						li.relative__item
+							a.relative__item-link(href='#link')
+								.relative__item-img
+									img(src="#", alt="image")
+								h3.relative__item-title Культурный рекламный блок: методология и особенности
+								p.relative__item-text Рейт-карта однообразно притягивает повседневный ребрендинг, медиаплан.
+
+
+			.page__buffer
+
+		.page__footer
+			+footer()
+
+		+scripts(['app.min.js'])

@@ -1,0 +1,99 @@
+include /../node_modules/bemto.jade/bemto
+include /../node_modules/jade-injected/jade-injected
+include ../blocks/scripts/scripts
+
+include ../blocks/head/head
+include ../blocks/header/header
+include ../blocks/hero/hero
+
+include ../blocks/footer/footer
+
+
+block head
+	- var pageTitle = 'Главная';
+	- var pageDescription = 'Главная'
+	- var pageKeywords = 'Главная'
+
+doctype html
+
+html(lang='ru')
+
+	+head()
+
+	body.page
+		.page__wrapper
+			+header()
+			+hero()
+			.main
+				.main__content
+					h2.title Культурный охват аудитории глазами современников
+					.text
+						p Объемная скидка естественно индуцирует комплексный портрет потребителя, не считаясь с затратами. Комплексный анализ ситуации интуитивно уравновешивает потребительский ребрендинг. Таргетирование существенно продуцирует рейтинг, не считаясь с затратами. Формат события, суммируя приведенные примеры, стремительно синхронизирует медиамикс. Привлечение аудитории индуцирует эксклюзивный бизнес-план, учитывая результат предыдущих медиа-кампаний. Целевой сегмент рынка основательно подпорчен.
+
+						p Ретроконверсия национального наследия, в рамках сегодняшних воззрений, деятельно упорядочивает показ баннера. Исходя из структуры пирамиды Маслоу, оценка эффективности кампании оправдывает фирменный инвестиционный продукт. Комплексный анализ ситуации директивно раскручивает охват аудитории. Креатив ускоряет пул лояльных изданий, используя опыт предыдущих кампаний. Можно предположить, что формат события разнородно продуцирует экспериментальный формат события. Product placement правомочен. PR, пренебрегая деталями, оправдывает институциональный пак-шот.
+
+						p Ретроконверсия национального наследия обуславливает межличностный жизненный цикл продукции. Баинг и селлинг основан на тщательном анализе. Согласно предыдущему, примерная структура маркетингового исследования решительно трансформирует потребительский медиамикс. Можно предположить, что восприятие марки концентрирует институциональный PR, отвоевывая рыночный сегмент.
+
+					.promo
+
+				.main__side
+					aside.side-block.who-we
+						h3.side-block__title Кто мы?
+						.side-block__text
+							p Клиентский спрос, безусловно, упорядочивает CTR. BTL раскручивает связанный нишевый проект. Согласно предыдущему, разработка медиаплана программирует конструктивный пак-шот, повышая.
+
+					aside.side-block.what-we-doing
+						h3.side-block__title Чем мы занимаемся?
+						.side-block__text
+							p Клиентский спрос, безусловно, упорядочивает CTR. BTL раскручивает связанный нишевый проект. Согласно предыдущему, разработка медиаплана программирует конструктивный пак-шот, повышая.
+
+					aside.side-articles
+						ul.side-articles__list
+							li.side-articles__item
+								a.side-articles__link(href='#link')
+									.side-articles__item-image
+										img(src="#", alt="image")
+									.side-articles__item-title Название статьи
+									.side-articles__item-text Медиавес пока плохо изменяет стиль Медиавес пока плохо изменяет стиль
+							li.side-articles__item
+								a.side-articles__link(href='#link')
+									.side-articles__item-image
+										img(src="#", alt="image")
+									.side-articles__item-title Название статьи
+									.side-articles__item-text Медиавес пока плохо изменяет стиль Медиавес пока плохо изменяет стиль
+							li.side-articles__item
+								a.side-articles__link(href='#link')
+									.side-articles__item-image
+										img(src="#", alt="image")
+									.side-articles__item-title Название статьи
+									.side-articles__item-text Медиавес пока плохо изменяет стиль Медиавес пока плохо изменяет стиль
+
+			.relative
+				.relative__in
+					ul.relative__list
+						li.relative__item
+							a.relative__item-link(href='#link')
+								.relative__item-img
+									img(src="#", alt="image")
+								h3.relative__item-title Культурный рекламный блок: методология и особенности
+								p.relative__item-text Рейт-карта однообразно притягивает повседневный ребрендинг, медиаплан.
+						li.relative__item
+							a.relative__item-link(href='#link')
+								.relative__item-img
+									img(src="#", alt="image")
+								h3.relative__item-title Культурный рекламный блок: методология и особенности
+								p.relative__item-text Рейт-карта однообразно притягивает повседневный ребрендинг, медиаплан.
+						li.relative__item
+							a.relative__item-link(href='#link')
+								.relative__item-img
+									img(src="#", alt="image")
+								h3.relative__item-title Культурный рекламный блок: методология и особенности
+								p.relative__item-text Рейт-карта однообразно притягивает повседневный ребрендинг, медиаплан.
+
+
+			.page__buffer
+
+		.page__footer
+			+footer()
+
+		+scripts(['app.min.js'])

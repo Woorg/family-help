@@ -1,0 +1,19 @@
+mixin form()
+	.form&attributes(attributes)
+
+		.form__title Название формы
+
+		form.form__form(action="#", method="post")
+			.form__field
+				input.form__input(type="tel", value="", placeholder="Телефон")
+			.form__field
+				input.form__input(type="text", value="", placeholder="Имя")
+			.form__field
+				.form__select-w
+					select#form-select.form__select(name="sympt")
+						option Симптомы
+						option(value="symptoms one") Симптом 1
+						option(value="symptoms two") Симптом 2
+						option(value="symptoms three") Симптом 3
+			.form__button
+				input.button.button_style-3.button_wide(type="submit", value="Отправить запрос")

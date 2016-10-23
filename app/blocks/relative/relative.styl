@@ -1,0 +1,51 @@
+.relative
+	background-color #f8fbfd
+	&__in
+		padding-top 50px
+		padding-bottom 20px
+		@extends .in
+	&__list
+		font-size 0
+	&__item
+		margin-left ratio-percentage(48,1180)
+		margin-bottom 30px
+		width ratio-percentage(360,1180)
+		display inline-block
+		vertical-align top
+		&:first-child
+			margin-left 0
+		+below(1024px)
+			margin-left 0
+			width 100%
+			&:last-child
+				margin-bottom 0
+	&__item-link
+		display block
+		text-decoration none
+		clearfix()
+	&__item-img
+		margin-right ratio-percentage(20,360)
+		float left
+		width 97px
+		height 94px
+		background-color #fff
+		border-radius 3px
+		box-shadow 0 1px 3px rgba(0, 0, 0, 0.05)
+		img
+			max-width 100%
+			height auto
+			display block
+	&__item-title
+		margin-bottom 7px
+		max-height 44px
+		color #39434b
+		font-size 16px
+		font-family $roboto-med
+		overflow hidden
+	&__item-text
+		margin-right -8px
+		color #5e6b75
+		font-size 13px
+		line-height 22px
+		overflow hidden
+

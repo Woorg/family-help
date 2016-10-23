@@ -1,0 +1,63 @@
+.callus
+	padding 17px ratio-percentage(30,1180) 15px ratio-percentage(28,1180)
+	clearfix()
+
+	&__phones
+		float left
+		font-size 14px
+		color #fff
+		+below(768px)
+			margin-bottom 5px
+			line-height 23px
+			float none
+	&__phones-first,
+	&__phones-second
+		display inline-block
+		vertical-align top
+		white-space nowrap
+	&__phones-first
+		margin-right 14px
+	&__phones-second
+		+below(768px)
+			display block
+	&__phones-text
+		// padding-right ratio-percentage(15,1180)
+		padding-right 7px
+		font-family $roboto-med
+		color #fffefe
+		// letter-spacing tracking(70)
+	&__phones-val
+		padding-right 0
+		font-family $roboto-lght
+		letter-spacing tracking(-20)
+		+below(584px)
+			display block
+	&__phones-val-sep
+		// padding-left ratio-percentage(4,1180)
+		padding-left 8px
+		// padding-right ratio-percentage(9,1180)
+		padding-right 10px
+		color #64717C
+	&__phones-sep
+		// padding-right ratio-percentage(20,1180)
+		padding-right 14px
+		font-family $roboto-med
+		text-transform uppercase
+	&__phones-sms
+		font-family $roboto-lght
+	&__phones-text_red
+		padding-right 0
+		color #f66262
+	&__phones-text_blue
+		color #75bfff
+	&__button
+		float right
+		color #fffefe
+		font-family $roboto-med
+		font-size 14px
+		text-transform uppercase
+		text-decoration none
+		&:hover
+			text-decoration underline
+		+below(768px)
+			float none

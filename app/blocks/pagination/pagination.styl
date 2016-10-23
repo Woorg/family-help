@@ -1,0 +1,40 @@
+.pagination
+	display block
+	&__list
+		font-size 0
+	&__item
+		display inline-block
+		vertical-align top
+	&__link
+		padding 8px 10px
+		display block
+		color #6a7075
+		font-family $roboto-reg
+		font-size 14px
+		font-weight normal
+		line-height 1
+		text-decoration none
+		&:hover
+			background-color #1373c5
+			color #fff
+		+below(350px)
+			padding-left 6px
+			padding-right 6px
+
+	&__item_active
+		.pagination__link
+			background-color #1373c5
+			color #fff
+	&__dots
+		span
+			padding-right 20px
+			padding-left 20px
+			color #6a7075
+			font-family $roboto-reg
+			font-size 14px
+			font-weight normal
+			line-height 32px
+			+below(425px)
+				padding-right 10px
+				padding-left 10px
+	// &__last

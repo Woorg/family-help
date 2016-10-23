@@ -1,0 +1,46 @@
+.header
+	&__in
+		@extends .in
+		clearfix()
+	&__top
+		margin-bottom 6px
+		padding 30px 0 20px
+		min-height 220px
+		background-color #002b4b
+		+below(768px)
+			padding-top 0
+	&__logo
+		margin-top 60px
+		float left
+		+below(768px)
+			margin-bottom 60px
+			float none
+	&__help
+		float right
+		width ratio-percentage(395,1180)
+		+below(1024px)
+			width 50%
+		+below(768px)
+			float none
+			width 100%
+
+	&__menu
+		position relative
+		z-index 1
+		background-color #0b5c98
+	&__bottom
+		position relative
+		margin-bottom -54px
+		@extends .in
+		padding-left 0
+		padding-right 0
+		width 1177px
+		+below(1180px)
+			width 100%
+		background-color #39434b
+		box-shadow 0 5px 15px rgba(0, 0, 0, 0.2)
+		min-height 50px
+		// +below(768px)
+		// 	margin-bottom -70px
+		// 	min-height 70px
+

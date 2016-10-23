@@ -1,0 +1,116 @@
+.side-block
+	margin-bottom 10px
+	padding 35px ratio-percentage(24,388) 32px ratio-percentage(40,388)
+	background #f2f9ff
+	&__title
+		margin-bottom 6px
+		color #39434b
+		font-family $roboto-bld
+		font-size 17px
+		text-transform uppercase
+	&__text
+		@extends .wysiwyg
+		p
+			font-size 13px
+			color #5e6b75
+			margin-bottom 0
+
+
+.who-we
+	background #f3fafe url('../images/general/side-block-1.jpg') 0 0 no-repeat
+.what-we-doing
+	background #f3fafe url('../images/general/side-block-2.jpg') 0 0 no-repeat
+	p
+		line-height 26px
+.side-articles
+	margin-top 40px
+	padding 40px 32px 40px 40px
+	background #f3fafe url('../images/general/side-block-3.jpg') 0 0 no-repeat
+.who-we,
+.what-we-doing,
+.side-articles
+	background-size cover
+
+.side-articles
+	// &__list
+
+	&__item
+		margin-bottom 20px
+		&:last-child
+			margin-bottom 0
+	&__link
+		display block
+		text-decoration none
+		clearfix()
+	&__item-image
+		margin-right 17px
+		float left
+		width 55px
+		height 55px
+		background-color #fff
+		border-radius 3px
+		box-shadow 0 1px 3px rgba(0, 0, 0, 0.05)
+		img
+			display block
+			max-width 100%
+			height auto
+	&__item-title
+		margin-top 5px
+		color #39434b
+		font-size 17px
+		font-family $roboto-med
+	&__item-text
+		color #5e6b75
+		white-space nowrap
+		text-overflow ellipsis
+		overflow hidden
+
+.side-banner
+	margin-top 30px
+	margin-bottom 20px
+	width 100%
+	height 87px
+	background #E5EFF6
+
+.side-contacts
+	background #f3fafe url('../images/general/side-contacts.jpg') 0 0 no-repeat
+	background-size cover
+	&__list
+		margin-left 20px
+		margin-bottom 22px
+	&__item
+		margin-bottom 16px
+	&__link
+		position relative
+		font-family $roboto-med
+		font-size 13px
+		text-decoration none
+		color #5e6b75
+		span
+			padding-right 10px
+			font-family $roboto-reg
+			color #348eda
+		&_phone,
+		&_skype,
+		&_address,
+		&_email
+			&:after
+				position absolute
+				top 4px
+				left -20px
+				content ""
+		&_phone
+			&:after
+				sprite($phone_icon)
+		&_skype
+			&:after
+				sprite($skype_icon)
+		&_address
+			&:after
+				sprite($address_icon)
+		&_email
+			&:after
+				sprite($mailsmall_icon)
+
+	&__button
+		margin-right 16px

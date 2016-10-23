@@ -1,0 +1,55 @@
+mixin header()
+	header.header&attributes(attributes)
+
+		.header__top
+			.header__in
+				.header__logo
+					a.logo(href='/') Logotype
+				.header__help
+					.help
+						.help__top
+							.help__title Помощь для семьи
+							a.help__question(href='#question') &#63;
+						.help__buttons
+							a.help__button.help__button_wide(href="#button") Помощь и Информация для семей
+							a.help__button(href="#button") Помощь для себя
+							a.help__button(href="#button") Помощь для друга
+		.header__menu
+			.header__in
+				nav.menu
+					a.menu__burger(href='#')
+						.menu__burger-w
+							span.menu__burger-strips
+							span.menu__burger-text Меню
+					ul.menu__list
+						li.menu__item
+							a.menu__link(href="#link-1")
+								span.menu__link-text Услуги
+									span.menu__quant 1
+						li.menu__item.menu__item_active
+							a.menu__link(href="#link-2")
+								span.menu__link-text Как мы лечим
+						li.menu__item
+							a.menu__link(href="#link-3")
+								span.menu__link-text Вопросы и ответы
+						li.menu__item
+							a.menu__link(href="#link-4")
+								span.menu__link-text Процесс реабилитации
+						li.menu__item
+							a.menu__link(href="#link-5")
+								span.menu__link-text Помощь близких
+						li.menu__item
+							a.menu__link(href="#link-6")
+								span.menu__link-text Блог
+		.header__bottom
+			//- .header__in
+			.callus
+				.callus__phones
+					.callus__phones-first
+						span.callus__phones-text Звоните нам:
+						span.callus__phones-val +38 000 000 00 00<span class='callus__phones-val-sep'>/</span>+38 000 000 00 00
+					.callus__phones-second
+						span.callus__phones-sep ИЛИ
+						span.callus__phones-sms СМС <span class="callus__phones-text callus__phones-text_red">"HELP"</span> на <span class='callus__phones-text callus__phones-text_blue'>66777</span>
+
+				a.callus__button(href='#callus') Запросить звонок

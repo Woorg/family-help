@@ -1,0 +1,120 @@
+.menu
+	&__burger
+		padding-top 25px
+		padding-bottom 25px
+		display none
+		color #fffefe
+		font-family $roboto-condreg
+		font-size 17px
+		text-transform uppercase
+		text-decoration none
+		clearfix()
+		+below(824px)
+			display block
+		+below(425px)
+			padding-top 15px
+			padding-bottom 15px
+	&__burger-w
+		margin auto
+		width 90px
+	&__burger-text
+		margin-left 7px
+		display inline-block
+		vertical-align middle
+		color #fffefe
+	&__burger-strips
+		position relative
+		top 0
+		display inline-block
+		vertical-align middle
+		width 30px
+		height 4px
+		background #FFF
+		transition background .3s ease
+		&:before,
+		&:after
+			position absolute
+			content ""
+			width 30px
+			height 4px
+			background #FFF
+			transition background .3s ease
+		&:before
+			top -10px
+			left 0
+		&:after
+			bottom -10px
+			left 0
+
+	&__burger
+		&:hover
+			.menu__burger-strips
+				background darken(#fff, 10)
+				&:after
+					background darken(#fff, 10)
+				&:before
+					background darken(#fff, 10)
+
+	&__list
+		font-size 0
+		text-align justify
+		+below(824px)
+			display none
+		&:after
+			content ""
+			display inline-block
+			width 100%
+			height 0
+			+below(824px)
+				display none
+	&__list_active
+		+below(824px)
+			display block
+			float left
+	&__item
+		display inline-block
+		vertical-align top
+		+below(824px)
+			width 100%
+	&__link
+		padding-top 24px
+		padding-left 40px
+		padding-right 40px
+		padding-bottom 24px
+		display block
+		color #fffefe
+		font-family $roboto-condreg
+		font-size 17px
+		text-transform uppercase
+		text-decoration none
+		transition background-color .3s ease
+		+below(1180px)
+			padding-left 20px
+			padding-right 20px
+		+below(950px)
+			padding-left 10px //824
+			padding-right 10px
+		+below(768px)
+			padding-top 14px
+			padding-bottom 14px
+		&:hover
+			background-color #a72e2e
+	&__item_active
+		.menu__link
+			background-color #a72e2e
+	&__link-text
+		position relative
+	&__quant
+		position absolute
+		top -7px
+		right -7px
+		padding 2px 2px
+		min-width 18px
+		height 18px
+		background-color #dd4343
+		border-radius 50%
+		color #fffefe
+		font-family $roboto-condreg
+		font-size 10px
+		text-transform uppercase
+		text-align center

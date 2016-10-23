@@ -1,0 +1,57 @@
+.hero
+	min-height 622px
+	background url('../images/general/hero-img.jpg') 0 0 no-repeat
+	background-size cover
+	&__in
+		@extends .in
+		clearfix()
+	&__content
+		padding-top 202px
+		float left
+		width ratio-percentage(760,1180)
+		+below(1024px)
+			padding-top 102px
+		+below(768px)
+			width 100%
+			float none
+	&__title
+		margin-bottom 20px
+		color #31383d
+		font-family $roboto-bld
+		font-size 34px
+		line-height em(40,34)
+		text-transform uppercase
+		+below(1024px)
+			font-size 23px
+	&__text
+		@extends .wysiwyg
+		p
+			margin-bottom 26px
+			line-height em(30,14)
+			// +below(768px)
+			// 	font-size 12px
+	&__buttons
+		margin-bottom 20px
+		font-size 0
+		.button
+			margin-right ratio-percentage(10,760)
+			margin-bottom 10px
+			+below(768px)
+				width 49.3%
+				padding-left ratio-percentage(20,760)
+				padding-right ratio-percentage(20,760)
+				&:last-child
+					margin-right 0
+			+below(375px)
+				width 100%
+	&__form
+		margin-top 168px
+		float right
+		width ratio-percentage(378,1180)
+		+below(1024px)
+			margin-top 102px
+		+below(768px)
+			margin-top 30px
+			margin-bottom 30px
+			width 100%
+			float none
